@@ -104,7 +104,7 @@ interface NovaExecutionManager {
 
     function owner() external view returns (address);
 
-    function setAuthority(Authority authority) external;
+    function setAuthority(Authority newAuthority) external;
 
     function setOwner(address newOwner) external;
 }
