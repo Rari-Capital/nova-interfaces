@@ -1,3 +1,3 @@
 # nova-interfaces
 
-All the key Nova libraries and interfaces in one DappTools friendly repo.
+All the key [Nova](https://github/com/rari-capital/nova) libraries and interfaces in one DappTools friendly repo.
