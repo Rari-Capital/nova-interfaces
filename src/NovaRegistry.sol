@@ -2,13 +2,16 @@
 pragma solidity >=0.7.0;
 
 import {ERC20} from "solmate/erc20/ERC20.sol";
+import {Authority} from "solmate/auth/Auth.sol";
+
+import {CrossDomainMessenger} from "./CrossDomainMessenger.sol";
 
 interface NovaRegistry {
     /*///////////////////////////////////////////////////////////////
                                 CONSTANTS
     //////////////////////////////////////////////////////////////*/
 
-    function CROSS_DOMAIN_MESSENGER() external pure returns (address);
+    function CROSS_DOMAIN_MESSENGER() external pure returns (CrossDomainMessenger);
 
     function MAX_INPUT_TOKENS() external pure returns (uint256);
 
@@ -140,11 +143,11 @@ interface NovaRegistry {
                           AUTHENTICATION LOGIC
     //////////////////////////////////////////////////////////////*/
 
-    function authority() external view returns (address);
+    function authority() external view returns (Authority);
 
     function owner() external view returns (address);
 
-    function setAuthority(address newAuthority) external;
+    function setAuthority(Authority newAuthority) external;
 
     function setOwner(address newOwner) external;
 }
