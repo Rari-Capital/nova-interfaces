@@ -1,0 +1,16 @@
+{
+  "name": "@rari-capital/nova-interfaces",
+  "version": "1.0.0",
+  "description": "All the key Nova libraries and interfaces in one DappTools friendly repo.",
+  "files": [
+    "src/**/*.sol"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rari-Capital/nova-interfaces.git"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13"
+  }
+}
