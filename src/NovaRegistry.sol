@@ -29,7 +29,7 @@ interface NovaRegistry {
                                 EVENTS
     //////////////////////////////////////////////////////////////*/
 
-    event ExecutionManagerConnected(address newExecutionManagerAddress);
+    event ExecutionManagerConnected(address indexed newExecutionManagerAddress);
 
     event RequestExec(bytes32 indexed execHash, address indexed strategy);
 
