@@ -140,8 +140,12 @@ interface NovaRegistry {
     function hasTokens(bytes32 execHash) external view returns (bool requestHasTokens, uint256 changeTimestamp);
 
     /*///////////////////////////////////////////////////////////////
-                          AUTHENTICATION LOGIC
+                       AUTHENTICATION LOGIC/EVENTS
     //////////////////////////////////////////////////////////////*/
+
+    event AuthorityUpdated(Authority indexed authority);
+
+    event OwnerUpdated(address indexed owner);
 
     function authority() external view returns (Authority);
 

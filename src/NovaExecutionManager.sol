@@ -30,11 +30,11 @@ interface NovaExecutionManager {
                                 EVENTS
     //////////////////////////////////////////////////////////////*/
 
+    event GasConfigUpdated(GasConfig newGasConfig);
+
+    event StrategyRegistered(StrategyRiskLevel strategyRiskLevel);
+
     event Exec(bytes32 indexed execHash, address relayer, bool reverted, uint256 gasUsed);
-
-    event AuthorityUpdated(Authority indexed authority);
-
-    event OwnerUpdated(address indexed owner);
 
     /*///////////////////////////////////////////////////////////////
                    GAS LIMIT/ESTIMATION CONFIGURATION
@@ -97,8 +97,12 @@ interface NovaExecutionManager {
     function hardRevert() external pure;
 
     /*///////////////////////////////////////////////////////////////
-                          AUTHENTICATION LOGIC
+                       AUTHENTICATION LOGIC/EVENTS
     //////////////////////////////////////////////////////////////*/
+
+    event AuthorityUpdated(Authority indexed authority);
+
+    event OwnerUpdated(address indexed owner);
 
     function authority() external view returns (Authority);
 
