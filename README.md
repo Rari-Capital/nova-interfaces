@@ -7,11 +7,11 @@ All the key [Nova](https://github.com/rari-capital/nova) libraries and interface
 To install with **Hardhat** or **Truffle**:
 
 ```sh
-npm install @rari-capital/nova
+npm install @rari-capital/nova-interfaces
 ```
 
 To install with **DappTools**:
 
 ```sh
-dapp install rari-capital/nova
+dapp install rari-capital/nova-interfaces
 ```
