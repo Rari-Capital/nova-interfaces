@@ -1,6 +1,6 @@
 {
   "name": "@rari-capital/nova-interfaces",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "All the key Nova libraries and interfaces in one DappTools friendly repo.",
   "repository": {
     "type": "git",
