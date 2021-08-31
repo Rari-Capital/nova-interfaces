@@ -32,9 +32,9 @@ interface NovaExecutionManager {
 
     event GasConfigUpdated(GasConfig newGasConfig);
 
-    event StrategyRegistered(StrategyRiskLevel strategyRiskLevel);
+    event StrategyRegistered(address indexed strategy, StrategyRiskLevel strategyRiskLevel);
 
-    event Exec(bytes32 indexed execHash, address relayer, bool reverted, uint256 gasUsed);
+    event Exec(bytes32 indexed execHash, address indexed relayer, bool reverted, uint256 gasUsed);
 
     /*///////////////////////////////////////////////////////////////
                    GAS LIMIT/ESTIMATION CONFIGURATION
